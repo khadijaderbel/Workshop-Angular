@@ -1,0 +1,14 @@
+<section class="card" id="amis">
+  <div class="icon">👥</div>
+  <div>
+    <h2>Liste des amis</h2>
+    @for (elt of friends; track elt.name) {
+        <input type="text" [(ngModel)]="elt.name" />
+    }
+    <ul>
+        @for (elt of friends; track elt.name) {
+            <li>{{elt.name}}</li>
+        }
+    </ul>
+  </div>
+</section>
